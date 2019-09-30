@@ -12,13 +12,13 @@
 								<h4 class="ir">검출 관리</h4>
 								<ul>
 									<li>
-										<a href="javascript:void(0)" class="on">검출 리스트</a>
+										<i class="fas fa-file-invoice-dollar"></i><a href="javascript:void(0)" class="on">검출 리스트</a>
 									</li>
 									<li>
-										<a href="<%=request.getContextPath()%>/approval/pi_search_list">결재 관리</a>
+										<i class="fas fa-file-invoice-dollar"></i><a href="<%=request.getContextPath()%>/approval/pi_search_list">결재 관리</a>
 									</li>
 									<li>
-										<a href="<%=request.getContextPath()%>/detection/pi_server_list">서버리스트</a>
+										<i class="fas fa-file-invoice-dollar"></i><a href="<%=request.getContextPath()%>/detection/pi_server_list">서버리스트</a>
 									</li>
 								</ul>
 			</c:if>
