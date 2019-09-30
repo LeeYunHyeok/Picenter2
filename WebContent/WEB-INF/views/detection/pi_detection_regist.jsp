@@ -35,12 +35,12 @@ div.matchData {
             </div>
 
             <div class="grid_top">
-                <h3>검출 리스트</h3>
+                <h3><i class="fas fa-align-justify"></i>검출 리스트</h3>
                 <table class="user_info">
                     <caption>검출 리스트</caption>
                     <tbody>
                         <tr>
-                            <td style="text-align: center; background-color: #eeeeee; width:100px">Host</td>
+                            <td style="text-align: center; background-color: #d6e4ed; width:100px">Host</td>
                             <td style="width:350px;">
                                 <select id="hostSelect" name="hostSelect" style="width: 100%;">
                                     <c:forEach items="${targetList}" var="targetList">
@@ -48,7 +48,7 @@ div.matchData {
                                     </c:forEach>
                                 </select>
                             </td>
-                            <td style="text-align: center; background-color: #eeeeee; width:100px">경로</td>
+                            <td style="text-align: center; background-color: #d6e4ed; width:100px">경로</td>
                             <td style="width:300px;">
                                 <input type="text" id="searchLocation" value="" class="edt_sch" style="width: 100%;">
                             </td>
