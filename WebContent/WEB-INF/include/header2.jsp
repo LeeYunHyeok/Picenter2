@@ -113,8 +113,8 @@ $(document).ready(function () {
 			
 			<div class="user">
 				${memberInfo.TEAM_NAME} <em>${memberInfo.USER_NAME} </em>${memberInfo.JIKGUK} 
-				<img class="Logout" src="${pageContext.request.contextPath}/resources/assets/images/btn_setting.png" id="btnLogout" title="Log-Out">
-
+				
+				<i class="fas fa-lock"></i>
 			</div>
 		</div>
 

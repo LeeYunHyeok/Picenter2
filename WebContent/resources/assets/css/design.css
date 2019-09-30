@@ -109,6 +109,12 @@ footer{max-width: 1400px; min-width: 1280px; display: table-row;}
 	border: 0;
 	box-shadow: 3px 3px 3px 3px gray;
 }
+.fa-lock {
+	color: #fff !important;
+    font-size: 14px;
+    background: #f98425 !important;
+    padding: 5px;
+    border-radius: 50%;}
 .footer_copyright{text-align: center; color: #777777; font-size: 13px; padding: 20px 0;}
 
 /* header */
@@ -133,11 +139,11 @@ footer{max-width: 1400px; min-width: 1280px; display: table-row;}
 .title_area .location{font-size: 12px; margin-top: 5px; color: #c6b5a3;}
 
 /* left menu */
-.lnb{float: left; background:#F8F8F8; height:100%; width: 290px; border-right: 1px solid #e7e5e1; padding:0 20px;}
+.lnb{float: left; background: #d6e4ed; min-height:877px; width: 290px; border-right: 1px solid #e7e5e1; padding:0 20px;}
 .lnb h3{font-size: 20px; font-weight: 500; height: 40px; color: #222; font-family: S-CoreDream-6Bold; }
-.lnb .menu_list{border-top: 2px solid #f98425; overflow-y: auto; max-height: 550px;}
+.lnb .menu_list{border-top: 2px solid #f98425; overflow-y: auto; max-height: 550px; font-size: 16px;}
 .lnb .menu_list a{color: #222;}
-.lnb .menu_list .fas {color: #000 !important; font-size: 17px; padding: 6px 6px; align-content: center; text-align: center; width: 20px;height: 20px; background: #f98425;border-radius: 50%;display: inline-block;}
+.lnb .menu_list .fas {color: #f98425 !important; font-size: 17px; padding: 6px 6px; align-content: center; text-align: center; width: 20px;height: 20px; background: #ffffff;border-radius: 50%;display: inline-block;}
 .lnb .menu_list > li > a{display: block; line-height: 50px; border-bottom: 1px solid #e7e7e6; padding-left: 10px; background: url("../../assets/images/btn_LF_list.png") no-repeat 97% 50%;}
 .lnb .menu_list > li > .on{display: block; line-height: 50px; border-bottom: 1px solid #e7e7e6; padding-left: 10px; background: url("../../assets/images/btn_LF_listOn.png") no-repeat 97% 50%;}
 .lnb .menu_list > li > ul > li > a{display: block; line-height: 50px; border-bottom: 1px solid #e7e7e6; padding-left: 35px; background: 17px center;}
@@ -156,6 +162,9 @@ footer{max-width: 1400px; min-width: 1280px; display: table-row;}
 .content{float: right; width: calc( 100% - 290px ); margin: 45px 0 0 0; padding-left: 50px;}
 .content h3{font-size: 20px; font-weight: 500; height: 40px; color: #222;}
 .grid_top{position: relative;}
+.grid_top .fas {
+	color: #006EB6 !important;
+    margin-right: 7px; }
 .list_sch{position: absolute; right: 0; top: 0;}
 .sch_area{position: relative;}
 .sch_area .edt_sch, .sch_area .btn_sch{position: absolute; right: 0; top: -5px;}
@@ -294,19 +303,31 @@ footer{max-width: 1400px; min-width: 1280px; display: table-row;}
 .popup_layer{position: fixed; left: 0; top: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, .6); z-index: 999;}
 .popup_box{display: table; position: absolute; left: 50%; top: 50%; margin: -310px 0 0 -310px; background: #fff; width: 620px; height: 600px;}
 .popup_top{display: table-row; background: #006EB6; height: 60px; line-height: 60px;}
-.popup_top h1{font-size: 22px; font-weight: 500; color: #fff; padding: 0 20px;}
+.popup_top h1{font-size: 22px; font-weight: 500; color: #fff; padding: 0 20px; border-bottom: 2px solid #f98425 !important;}
 .popup_content{display: table-row;}
 .content-box{padding: 20px; overflow-y: auto; height: 480px;}
 .content-box h2{font-size: 18px; line-height: 30px;}
 .popup_tbl{border-top: 2px solid #1898D2; width: 100%;}
 .popup_tbl tbody tr{border-bottom: 1px solid #eee;}
-.popup_tbl tbody th{text-align: center; background: #40C8F4; font-weight: 500; padding-left: 20px;}
+.popup_tbl tbody th{text-align: center; background: #40C8F4; font-weight: 500;}
 .popup_tbl tbody td{text-align: left; height: 45px; padding-left: 20px; position: relative;}
-.popup_tbl tbody td button{border: 1px solid #ddd; border-radius: 2px; background: #f9f9f9; padding: 7px 15px; font-weight: bold;}
+.popup_tbl tbody td button{width: 120px !important; border: 1px solid #ddd; border-radius: 2px; background: #f9f9f9; padding: 7px 15px; font-weight: bold;}
 .popup_tbl tbody td button:hover{border: 1px solid #006EB6; background: #006EB6;}
 .popup_btn{display: table-row; height: 40px;}
 .btn_area{text-align: right; padding: 10px 20px 0 20px;}
-.btn_area button{padding: 0 20px; margin-bottom: 20px; height: 30px; color: #fff; font-weight: bold; border-radius: 2px; background: #1898D2;}
+.popup_tbl .btn_area {padding: 0px 0px 0px 10px !important;}
+.popup_tbl .btn_area button { background: #f98425 !important; height: 35px;}
+.btn_area button {
+    padding: 0 40px;
+    margin-bottom: 20px;
+    height: 40px;
+    border-bottom: 2px solid #006EB6;
+    border-right: 1px solid #006EB6;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 2px;
+    background: #1898D2;
+}
 .btn_area button:hover{background: #006EB6; color: #fff;}
 
 /*****footer_copyright*****/
@@ -314,13 +335,20 @@ footer{max-width: 1400px; min-width: 1280px; display: table-row;}
 .footer_area .footer_copy{display: table-cell; width: 50%; color: #777;}
 .footer_area .footer_link{display: table-cell; width: 50%; text-align: right;}
 .footer_area .footer_link a{display: inline-block; margin-left: 10px; padding-right: 23px; font-weight: bold; color: #777; background: url("../../assets/images/btn_popup.png") no-repeat right center;}
-.footer_area .footer_link a:hover{text-decoration: underline;}
+.footer_area .f"WebContent/WEB-INF/include/header.jsp"ooter_link a:hover{text-decoration: underline;}
 .footer_area .footer_link span{display: inline-block; margin-left: 10px; color: #777;}
 
 
 /** common **/
-.btn_new{font-size: 15px; font-weight: 500; color: #ffffff; height: 32px; padding: 0 20px; border-radius:4px; background: #eeeeee; border:1px solid #dddddd; background: #006EB6;
-border-bottom: 1px solid #023556; border-right: 1px solid #023556;}
+.btn_new{    
+	font-size: 15px;
+    font-weight: 500;
+    color: #1898D2;
+    height: 32px;
+    padding: 0 20px;
+    border-radius: 4px;
+    background: #eee;
+    border: 1px solid #ddd;}
 .btn_new:hover{background: #006EB6; color: #fff;}
 .version{width: 156px;}
 .magin_t45{margin-top: 45px;}
