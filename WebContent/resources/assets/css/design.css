@@ -143,7 +143,7 @@ footer{max-width: 1400px; min-width: 1280px; display: table-row;}
 .lnb h3{font-size: 20px; font-weight: 500; height: 40px; color: #222; font-family: S-CoreDream-6Bold; }
 .lnb .menu_list{border-top: 2px solid #f98425; overflow-y: auto; max-height: 550px; font-size: 16px;}
 .lnb .menu_list a{color: #222;}
-.lnb .menu_list .fas {color: #f98425 !important; font-size: 17px; padding: 6px 6px; align-content: center; text-align: center; width: 20px;height: 20px; background: #ffffff;border-radius: 50%;display: inline-block;border: 1px solid #f87425;}
+.lnb .menu_list .fas {color: #f98425 !important; font-size: 17px; padding: 8px 6px 6px 6px;; align-content: center; text-align: center; width: 20px;height: 20px; background: #ffffff;border-radius: 50%;display: inline-block;border: 1px solid #f87425;}
 .lnb .menu_list ul > li { height: 52px; }
 .lnb .menu_list > li > a{display: block; line-height: 52px; border-bottom: 1px solid #e7e7e6; padding-left: 10px; background: url("../../assets/images/btn_LF_list.png") no-repeat 97% 50%;}
 .lnb .menu_list > li > .on{display: block; line-height: 50px; border-bottom: 1px solid #e7e7e6; padding-left: 10px; background: url("../../assets/images/btn_LF_listOn.png") no-repeat 97% 50%;}
@@ -164,7 +164,7 @@ footer{max-width: 1400px; min-width: 1280px; display: table-row;}
 .content h3{font-family: 'S-CoreDream-6Bold'; font-size: 20px; font-weight: 500; height: 40px; color: #222;}
 .grid_top{position: relative;}
 .grid_top .fas {
-	color: #006EB6 !important;
+	color: #f98425 !important;
     margin-right: 7px; }
 .list_sch{position: absolute; right: 0; top: 0;}
 .sch_area{position: relative;}
