@@ -315,7 +315,7 @@ footer{display: table-row;}
 
 
 /** common **/
-.btn_new{font-size: 15px; font-weight: 500; color: #fff; height: 32px; padding: 0 20px; border-radius: 2px; background: #1898D2;}
+.btn_new{font-size: 15px; font-weight: 500; color: #111111; height: 32px; padding: 0 20px; border-radius: 2px; background: #eeeeee; border:1px solid #dddddd;}
 .btn_new:hover{background: #006EB6; color: #fff;}
 .version{width: 156px;}
 .magin_t45{margin-top: 45px;}
