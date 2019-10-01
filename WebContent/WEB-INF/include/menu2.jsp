@@ -30,13 +30,13 @@
 								<h4 class="ir">검출 관리</h4>
 								<ul>
 									<li>
-										<a href="<%=request.getContextPath()%>/detection/pi_detection_regist">검출 리스트</a>
+										<a href="<%=request.getContextPath()%>/detection/pi_detection_regist"><i class="fas fa-file-invoice-dollar"></i>&nbsp;검출 리스트</a>
 									</li>
 									<li>
-										<a href="javascript:void(0)" class="on">결재 관리</a>
+										<a href="javascript:void(0)" class="on"><i class="fas fa-clipboard-list"></i>&nbsp;결재 관리</a>
 									</li>
 									<li>
-										<a href="<%=request.getContextPath()%>/detection/pi_server_list">서버리스트</a>
+										<a href="<%=request.getContextPath()%>/detection/pi_server_list"><i class="fas fa-upload"></i>&nbsp;서버리스트</a>
 									</li>
 								</ul>
 			</c:if>
@@ -48,13 +48,13 @@
 								<h4 class="ir">검출 관리</h4>
 								<ul>
 									<li>
-										<a href="<%=request.getContextPath()%>/detection/pi_detection_regist">검출 리스트</a>
+										<a href="<%=request.getContextPath()%>/detection/pi_detection_regist"><i class="fas fa-file-invoice-dollar"></i>&nbsp;검출 리스트</a>
 									</li>
 									<li>
-										<a href="<%=request.getContextPath()%>/approval/pi_search_list">결재 관리</a>
+										<a href="<%=request.getContextPath()%>/approval/pi_search_list"><i class="fas fa-clipboard-list"></i>&nbsp;결재 관리</a>
 									</li>
 									<li>
-										<a href="javascript:void(0)" class="on">서버리스트</a>
+										<a href="javascript:void(0)" class="on"><i class="fas fa-upload"></i>&nbsp;서버리스트</a>
 									</li>
 								</ul>
 			</c:if>
