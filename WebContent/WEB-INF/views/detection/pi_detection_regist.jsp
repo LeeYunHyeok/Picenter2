@@ -85,14 +85,14 @@ if (userAgent.indexOf("Trident") > 0 || userAgent.indexOf("MSIE") > 0) {
 	<table class="mxWindow" style="width: 100%; height: 100%;">
 	<tbody>
 		<tr>
-			<td class="mxWindowTitle" style="background: #1898D2; cursor: grab; touch-action: none;">
+			<td class="mxWindowTitle" style="background:#006EB6 cursor: grab; touch-action: none;">
 				<table style="width: 100%; height: 36px;">
 					<colgroup>
 						<col width="*">
 						<col width="30px">
 					</colgroup>
 					<tr>
-						<td style="color: #ffffff; text-align: left; padding-left: 20px;"><h2>개인정보검출 상세정보</h2>
+						<td style="color: #ffffff; text-align: left; padding-left: 20px;"><h3>개인정보검출 상세정보</h3>
 						</td>
 						<td style="display: inline-block; padding-top: 6px; cursor: default;">
 							<img src="${pageContext.request.contextPath}/resources/assets/images/close.gif" title="Close" id="taskWindowClose">
