@@ -194,7 +194,7 @@ footer{max-width: 1400px; min-width: 1280px; display: table-row;}
 .btn_poplist li{padding: 5px 0;}
 .btn_poplist li button{width: 110px;}
 
-.user_info{border-top: 1px solid #006EB6; width: 100%;}
+.user_info{border-top: 1px solid #006EB6; width: auto;}
 .user_info tr{border-bottom: 2px solid #006EB6;}
 .user_info td,.user_info th{height: 55px; padding: 17px 12px; text-align: left;}
 .user_info th{background: #40C8F4; font-weight: 700;}
