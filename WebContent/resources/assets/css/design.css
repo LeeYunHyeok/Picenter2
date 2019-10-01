@@ -335,7 +335,7 @@ footer{max-width: 1400px; min-width: 1280px; display: table-row;}
 /*****footer_copyright*****/
 .footer_area{display: table; width: 100%; padding: 0 50px; height: 80px; line-height: 80px; background: #f4f4f4; border-top: 2px solid #006EB6;}
 .footer_area .footer_copy{display: table-cell; width: 50%; color: #777;}
-.footer_area .footer_link{display: table-cell; width: 50%; text-align: right;}
+.footer_area .footer_link{display: none; width: 50%; text-align: right;}
 .footer_area .footer_link a{display: inline-block; margin-left: 10px; padding-right: 23px; font-weight: bold; color: #777; background: url("../../assets/images/btn_popup.png") no-repeat right center;}
 .footer_area .f"WebContent/WEB-INF/include/header.jsp"ooter_link a:hover{text-decoration: underline;}
 .footer_area .footer_link span{display: inline-block; margin-left: 10px; color: #777;}
