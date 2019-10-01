@@ -26,7 +26,7 @@
 					<caption>사용자정보</caption>
 					<tbody>
 						<tr>
-							<td style="text-align: center; background-color: #eeeeee; width:5vw;">업무구분</td>
+							<td style="text-align: center; background-color: #d6e4ed; width:5vw;">업무구분</td>
 							<td style="width:9.2vw;">
 								<select id="selectList" name="selectList" style="width:8.5vw;">
 									<option value="/approval/pi_search_list" selected>정탐/오탐 리스트</option>
@@ -36,7 +36,7 @@
 									<option value="/change/pi_change_list"> 담당자 변경 리스트</option>
 								</select>
 							</td>
-							<td style="text-align: center; background-color: #eeeeee; width:3vw">상태</td>
+							<td style="text-align: center; background-color: #d6e4ed; width:3vw">상태</td>
 							<td style="width: 5.2vw;">
                                 <select id="statusList" name="statusList" style="width:4.5vw;">
                                     <option value="">전체</option>
@@ -46,12 +46,12 @@
                                     <option value="NR" selected>미요청</option>
                                 </select>
 							</td>
-							<td style="text-align: center; background-color: #eeeeee; width:4vw;">호스트</td>
+							<td style="text-align: center; background-color: #d6e4ed; width:4vw;">호스트</td>
 							<td style="width: 9.5vw;"><input type="text" style="width: 8.8vw; font-size: .85vw;" size="10" id="schOwner" placeholder="호스트명을 입력하세요"></td>
 							
-							<td style="text-align: center; background-color: #eeeeee; width:4vw;">문서명</td>
+							<td style="text-align: center; background-color: #d6e4ed; width:4vw;">문서명</td>
 							<td style="width:8.6vw"><input type="text" style="width: 8vw; font-size: .85vw;" size="20" id="schFilename" placeholder="문서명을 입력하세요"></td>
-							<td style="text-align: center; background-color: #eeeeee; width:5.5vw">문서저장일</td>
+							<td style="text-align: center; background-color: #d6e4ed; width:5.5vw">문서저장일</td>
 							<td style="width:17vw;">
 								<input type="date" id="fromDate" style="text-align: center; width:7.5vw; font-size:.6vw;" readonly="readonly" value="${fromDate}" >
 								<span style="width: 8%; margin-right: 3px;">~</span>

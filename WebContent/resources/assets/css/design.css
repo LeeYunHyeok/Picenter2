@@ -195,9 +195,10 @@ footer{max-width: 1400px; min-width: 1280px; display: table-row;}
 .btn_poplist li button{width: 110px;}
 
 .user_info{border-top: 1px solid #006EB6; width: 100%;}
+.user_info tr:nth-child(1) {border-bottom: 2px solid #ddd;}
 .user_info tr{border-bottom: 2px solid #006EB6;}
 .user_info td,.user_info th{height: 55px; padding: 17px 12px; text-align: left;}
-.user_info th{background: #40C8F4; font-weight: 700;}
+.user_info th{background: #006EB6; font-weight: 700;}
 .user_info td{color: #222;}
 .user_info td .user_name{font-size: 18px; margin-top: 8px;}
 .user_info td .user_name em{font-size: 14px;}
