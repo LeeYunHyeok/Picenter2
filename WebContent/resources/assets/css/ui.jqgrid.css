@@ -505,7 +505,7 @@ td.menu_text {
 	height:12px;
 }
 */
-
+.ui-jqgrid tr.jqgrow td.pointer { padding: 1px 2px 1px 2px !important; }
 .ui-jqgrid tr.jqgrow td,
 .ui-jqgrid tr.jqgroup td {
 	font-weight: normal; 
