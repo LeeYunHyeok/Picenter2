@@ -202,8 +202,12 @@ footer{max-width: 1400px; min-width: 1280px; display: table-row;}
 .user_info td .user_name{font-size: 18px; margin-top: 8px;}
 .user_info td .user_name em{font-size: 14px;}
 /*approval*/
-.approvalTh .user_info td{
-	padding: 7px 2px !important;
+.approvalTh td{
+	padding: 12px 5px !important;
+	font-size: .75vw;
+}
+.approvalTh td select {
+	font-size: .75vw;
 }
 
 
