@@ -203,7 +203,7 @@ footer{max-width: 1400px; min-width: 1280px; display: table-row;}
 .user_info td .user_name em{font-size: 14px;}
 
 /*approval*/
-.approvalTh.user_info .user_info td, .user_info th{
+.approvalTh .user_info td{
 	padding: 7px 2px;
 }
 
