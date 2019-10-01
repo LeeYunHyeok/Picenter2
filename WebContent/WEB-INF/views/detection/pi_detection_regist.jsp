@@ -85,7 +85,7 @@ if (userAgent.indexOf("Trident") > 0 || userAgent.indexOf("MSIE") > 0) {
 	<table class="mxWindow" style="width: 100%; height: 100%;">
 	<tbody>
 		<tr>
-			<td class="mxWindowTitle" style="background:#006EB6 cursor: grab; touch-action: none;">
+			<td class="mxWindowTitle" style="background:#006EB6; cursor: grab; touch-action: none;">
 				<table style="width: 100%; height: 36px;">
 					<colgroup>
 						<col width="*">
