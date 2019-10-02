@@ -35,12 +35,12 @@ div.matchData {
             </div>
 
             <div class="grid_top">
-                <h3><i class="fas fa-file-invoice-dollar"></i>검출 리스트</h3>
+                <h3>검출 리스트</h3>
                 <table class="user_info">
                     <caption>검출 리스트</caption>
                     <tbody>
                         <tr>
-                            <td style="text-align: center;font-size: 16px; background-color: #d6e4ed; width:100px">Host</td>
+                            <td style="text-align: center; background-color: #d6e4ed; width:100px">Host</td>
                             <td style="width:350px;">
                                 <select id="hostSelect" name="hostSelect" style="width: 100%;">
                                     <c:forEach items="${targetList}" var="targetList">
@@ -48,7 +48,7 @@ div.matchData {
                                     </c:forEach>
                                 </select>
                             </td>
-                            <td style="text-align: center; font-size: 16px; background-color: #d6e4ed; width:100px">경로</td>
+                            <td style="text-align: center; background-color: #d6e4ed; width:100px">경로</td>
                             <td style="width:300px;">
                                 <input type="text" id="searchLocation" value="" class="edt_sch" style="width: 100%;">
                             </td>
@@ -85,14 +85,14 @@ if (userAgent.indexOf("Trident") > 0 || userAgent.indexOf("MSIE") > 0) {
 	<table class="mxWindow" style="width: 100%; height: 100%;">
 	<tbody>
 		<tr>
-			<td class="mxWindowTitle" style="background:#006EB6; cursor: grab; touch-action: none;">
+			<td class="mxWindowTitle" style="background: #1898D2; cursor: grab; touch-action: none;">
 				<table style="width: 100%; height: 36px;">
 					<colgroup>
 						<col width="*">
 						<col width="30px">
 					</colgroup>
 					<tr>
-						<td style="color: #ffffff; text-align: left; padding-left: 20px;"><h3>개인정보검출 상세정보</h3>
+						<td style="color: #ffffff; text-align: left; padding-left: 20px;"><h2>개인정보검출 상세정보</h2>
 						</td>
 						<td style="display: inline-block; padding-top: 6px; cursor: default;">
 							<img src="${pageContext.request.contextPath}/resources/assets/images/close.gif" title="Close" id="taskWindowClose">
@@ -128,7 +128,7 @@ if (userAgent.indexOf("Trident") > 0 || userAgent.indexOf("MSIE") > 0) {
 <%
 } else {
 %>
-<div id="taskWindow" style="position:absolute; left: 339px; top: 240px; touch-action: none; width: 50%; height: 300px; z-index: 999; display:none; width: 70%; max-width: 70%; min-width: 30%; min-height: 200px;" class="ui-widget-content">
+<div id="taskWindow" style="position:absolute;left: 340px; top: 239px; touch-action: none; max-width: 70%; height: 300px; z-index: 999; display:none; min-width: 30%; min-height: 200px;" class="ui-widget-content">
 	<table class="mxWindow" style="width: 100%; height: 100%;">
 	<tbody>
 		<tr>
@@ -348,14 +348,14 @@ if (userAgent.indexOf("Trident") > 0 || userAgent.indexOf("MSIE") > 0) {
             <h1 id="title_change"></h1>
         </div>
         <div class="popup_content">
-            <div class="content-box" style="height: 390px;">
+            <div class="content-box" style="height: 500px;">
                 <!-- <h2>세부사항</h2>  -->
                 <table class="popup_tbl">
                     <colgroup>
                         <col width="130">
                         <col width="*">
                         <col width="130">
-                    </colgroup>
+                    </colgroup> 
                     <tbody>
                         <tr>
                             <th style="background-color: #f1f1f1;">담당자</th>
@@ -387,15 +387,15 @@ if (userAgent.indexOf("Trident") > 0 || userAgent.indexOf("MSIE") > 0) {
                         <tr id="changePathTr3">
                             <th style="background-color: #f1f1f1;">변경 경로</th>
                             <td colspan="2">
-                                <input type="text" id="inputChangePath" onkeyup="var e=event||window.event; fnChangeLocationAdd(this, e);" style="width: 420px;">
+                                <input type="text" id="inputChangePath" onkeyup="var e=event||window.event; fnChangeLocationAdd(this, e);" style="width: 99%;">
                             </td>
                         </tr>
                         <tr>
                             <td colspan="3" style="padding:5px;">
-                                <div id="path_change_div" style="width:100%; height:152px; overflow:auto; layout:fixed;">
-                                <table id="path_change" style="text-align:center; width:100%;">
-                                    <tbody>
-                                    </tbody>
+                                <div id="path_change_div" style="width:100%; height:265px; overflow:auto; layout:fixed;">
+                                <table id="path_change" style="text-align:left; width:100%;">
+                                    <!-- <tbody> 
+                                    </tbody> -->
                                 </table>
                                 </div>
                             </td>
@@ -525,7 +525,7 @@ function fnChangeLocationAdd(element, e)
     var sTag = "";
 
     sTag += "<tr style='border:none;'>";
-    sTag += "    <th style='padding:2px; background: transparent; overflow:hidden;'>" + changePath + "</th>"
+    sTag += "    <th style='padding:2px; background: transparent; overflow:hidden; text-align:left;'>" + changePath + "</th>"
     sTag += "    <td style='padding:0px; background: transparent; height:23px; width:30px;'>";
     sTag += "        <input type='button' value='X' name='button' style='color:#ba1919; border:0 none; background-color:transparent; cursor:pointer; float:center; height:23px;' onclick='fnLocationRemove(this);'>";
     sTag += "    </td>";
@@ -638,12 +638,13 @@ function fnOpenChangePath()
             aNameList.push($("#targetGrid").getCell(sRowID, 'SHORTNAME'));
             aHashIdList.push($("#targetGrid").getCell(sRowID, 'ID'));
             sTargetId = $("#targetGrid").getCell(sRowID, 'PID');
-            sTargetNm = $("#targetGrid").getCell(sRowID, 'HOST') + "{" + + ")";
+            sTargetNm = $("#targetGrid").getCell(sRowID, 'HOST');
         }
     });
 
     //$("#deletionRegistPopup #path_change").val(aNameList);
     var sTag = "";
+    $("#changePathPopup #path_change").html("");
     for (var i = 0; i < aNameList.length; i += 1) 
     {
         sTag  = "<tr style='border:none;' id='"+aHashIdList[i]+"'>";
@@ -661,7 +662,7 @@ function fnOpenChangePath()
         return;
     }
 	
-	$('#title_change').html("경로변경_" + <fmt:formatDate value="${nowDate}" pattern="yyyyMMdd" /> + "_" + "${memberInfo.USER_NO}");
+	$('#title_change').html("담당자 변경_" + <fmt:formatDate value="${nowDate}" pattern="yyyyMMdd" /> + "_" + "${memberInfo.USER_NO}");
 
     // 검출리스트에서 체크한것이 없으면
     if (aChangeList.length == 0) {
@@ -670,7 +671,7 @@ function fnOpenChangePath()
 
         $("#changePathTr1").show();
         $("#changePathTr3").show();
-        $("#path_change_div").css("height", "152");
+        $("#path_change_div").css("height", "265");
 
         $("#inputChangePath").focus();
         $("#selectedServer").text('');
@@ -686,7 +687,8 @@ function fnOpenChangePath()
         $("#selectedTargetId").val(sTargetId);
         $("#selectedOneServer").val(sTargetNm)
 
-        $("#selectedServer").text(sTargetNm + "{" + sTargetId + ")");
+        //$("#selectedServer").text(sTargetNm + "{" + sTargetId + ")");
+        $("#selectedServer").text(sTargetNm);
         $("#selectedOneServer").prop("checked", true)
     }
 
@@ -698,7 +700,9 @@ function fnSaveChange()
 {
     var aHashId = [];
     var aPathChangeEx = [];
-    var tbody = $("#path_change").children();
+    //var tbody = $("#path_change").children();
+    //var tr = tbody.children();
+    var tbody = $("#changePathPopup #path_change");
     var tr = tbody.children();
 
     $(tr).each(function(index, item){
@@ -1572,12 +1576,12 @@ $(document).ready(function () {
                     type    : "POST",
                     async   : true
                 },
-                colNames:['담당자','직위','사원번호', '부서'],
+                colNames:['부서','담당자','직책', '사번'],
                 colModel: [
-                    { index: 'USER_NAME',   name: 'USER_NAME',  width: 180, align: 'center' },
+                	{ index: 'TEAM_NAME',   name: 'TEAM_NAME',  width: 180, align: 'center' },
+                	{ index: 'USER_NAME',   name: 'USER_NAME',  width: 180, align: 'center' },
                     { index: 'JIKGUK',      name: 'JIKGUK',     width: 180, align: 'center' },
-                    { index: 'USER_NO',     name: 'USER_NO',    width: 180, align: 'center' },
-                    { index: 'TEAM_NAME',   name: 'TEAM_NAME',  width: 180, align: 'center' }                    
+                    { index: 'USER_NO',     name: 'USER_NO',    width: 180, align: 'center', hidden: true }
                 ],
                 id: "USER_NO",
                 loadonce:true,
@@ -1606,7 +1610,7 @@ $(document).ready(function () {
                     var user_no = $(this).getCell(rowid, 'USER_NO');
                     
                     $("#ok_user_no").val(user_no);
-                    $("#user_name").val(user_name + " " + jikguk + " (" + user_no + ")");
+                    $("#user_name").val(user_name + " " + jikguk);
                     $("#userSelect").hide();
                 },
                 loadComplete: function(data) {
@@ -1689,7 +1693,7 @@ $(document).ready(function () {
 
             $("#selectedTargetId").val(rowTargetId);
             $("input:radio[name=changeServerChk]").val(rowAgentName);
-            $("#selectedServer").text(rowAgentName+'('+rowTargetId+')');
+            $("#selectedServer").text(rowAgentName);
 
             console.log("row AGENT_NAME : " + rowAgentName);
             console.log("row TARGET_ID : " + rowTargetId);
